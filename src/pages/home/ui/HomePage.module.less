@@ -1,0 +1,126 @@
+.page {
+  padding-top: 20px;
+  gap: 30px;
+
+  &,
+  .content,
+  :global(.ant-table-wrapper),
+  :global(.ant-spin),
+  :global(.ant-spin-container),
+  :global(.ant-table),
+  :global(.ant-table-container) {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  :global(.ant-table-header) {
+    flex: 0 0 auto;
+  }
+
+  th {
+    background-color: transparent !important;
+    font-size: 18px;
+    &:before {
+      display: none;
+    }
+  }
+
+  :global(.ant-table-cell) {
+    background-color: transparent !important;
+  }
+  :global(.ant-table-selection-column) {
+    border-left: 3px solid transparent;
+  }
+  :global(.ant-table-row-selected .ant-table-selection-column) {
+    border-left-color: #3c538e;
+  }
+  :global(.ant-pagination-total-text) {
+    margin-right: auto;
+  }
+  :global(.ant-pagination) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.title {
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.search {
+  max-width: 1000px;
+  background-color: #f3f3f3;
+  color: #999999;
+}
+
+.productCell {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.category {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.content {
+  padding: 30px;
+  background-color: #fff;
+  gap: 40px;
+}
+
+.toolbarButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.productCellTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.cellTitle {
+  margin: 0;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.plusButton {
+  border-radius: 45%;
+  width: 52px !important;
+  height: 27px !important;
+}
+
+.moreButton {
+  transform: rotate(90deg);
+  border-radius: 50%;
+}
+
+.paginationTotalText {
+  color: #969b9f;
+}
